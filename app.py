@@ -2,8 +2,8 @@ import panel as pn
 import pandas as pd
 import hvplot.pandas
 import numpy as np
-from rei.rei import sdat
-from rei.rei import search_homes as s
+from rei import sdat
+from rei import search_homes as s
 
 auc = pd.concat([s.auction_hw(), s.auction_ac()])
 redfin = s.redfin()
