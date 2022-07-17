@@ -29,7 +29,7 @@ def comps(address="1303 Alberta Dr"):
                 pn.Card(comps.query("sqft >@meta.sqft.max()*.8 and sqft <@meta.sqft.max()*1.2").price.describe(), title="ARV"),
                 pn.Card(comps.hvplot(x='sqft', y='price', kind='scatter', color="basement") *\
                        hv.VLine(meta.sqft.max(), color='blue')),
-                pn.Card(comps['address','price', 'sqft', 'acre','basement','style','type', 'url']], title="Comparable Data")
+                pn.Card(comps[['address','price', 'sqft', 'acre','basement','style','type', 'url']], title="Comparable Data")
                 
                 )
         )
