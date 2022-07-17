@@ -5,8 +5,8 @@ import holoviews as hv
 import numpy as np
 import ipyleaflet as leaflet
 
-from .rei import sdat
-from .rei import search_homes as s
+from rei import sdat
+from rei import search_homes as s
 
 auc = pd.concat([s.auction_hw(), s.auction_ac()])
 redfin = s.redfin()

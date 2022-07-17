@@ -9,3 +9,4 @@ statsmodels
 holoviews
 hvplot
 ipyleaflet
+git+https://github.com/frankij11/rei.git
